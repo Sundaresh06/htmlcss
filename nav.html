@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: green;
+  color: white;
+}
+.flex1 {
+  display: flex;
+  align-items: stretch;
+  background-color: lightgrey;
+}
+
+.flex1 div {
+  background-color: white;
+  color: black;
+  width: 33%;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex2 {
+  display: flex;
+  align-items: stretch;
+  background-color: lightgrey;
+}
+
+.flex2 div {
+  background-color: white;
+  color: black;
+  width: 33%;
+  margin: 1px;
+ text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex3 {
+  display: flex;
+  align-items: stretch;
+  background-color: lightgrey;
+}
+.flex3 div {
+  background-color: white;
+  color: black;
+  width: 33%%;
+  margin: 1px;
+ text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+section{
+  float: left;
+  width: 50%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">home</a></li>
+  <li><a href="#ref">ref</a></li>
+  
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+<div class="flex1">
+  <div style="flex-basis:33%">A</div>
+  <div style="flex-basis:33%">B</div>
+  <div style="flex-basis:33%"></div>
+  
+</div>
+<div class="flex2">
+  <div style="flex-basis:25%">A</div>
+  <div style="flex-basis:25%">B</div>
+  <div style="flex-basis:50%">C</div>
+</div>
+
+<section>
+  <h2>A</h2>
+</section>
+ <div class="flex3">
+  <div style="flex-basis:100%">A</div>
+    <div style="flex-basis:100%">A</div>
+    
+</div>
+
+</body>
+</html>
